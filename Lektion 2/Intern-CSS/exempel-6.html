@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            color: olivedrab;
+        }
+        
+        h1 {
+            color: blue;
+        }
+        
+        .button {
+            border-radius: 10px;
+            width: 100px;
+            height: 40px;
+            outline: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lektion 2 - Exempel 6</h1>
+    Här kan du hitta olika css stilar.
+    <div>
+        <ul>
+            <li>Hej</li>
+            <li>Jag</li>
+            <li>Heter</li>
+            <li>Payam</li>
+            <li>Eshtiagh</li>
+        </ul>
+        <button id="change" onclick="changeColor()" class="button">Change Color</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.getElementById('change');
+
+
+    var button = document.querySelector('.button');
+
+    button.onclick = function() {
+        var red = Math.floor(Math.random() * 256);
+        var blue = Math.floor(Math.random() * 256);
+        var green = Math.floor(Math.random() * 256);
+
+        this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+    };
+</script>
