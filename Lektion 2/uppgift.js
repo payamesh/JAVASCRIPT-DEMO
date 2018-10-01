@@ -9,10 +9,10 @@ userbtn.onclick = function() {
 //byt bild
 function changeImage() {
     let image = document.getElementById('myImage');
-    if (image.src.match('../lighton.jpeg')) {
-        image.src = "../lightoff.jpeg";
+    if (image.src.match('../images/lighton.jpeg')) {
+        image.src = "../images/lightoff.jpeg";
     } else {
-        image.src = '../lighton.jpeg';
+        image.src = '../images/lighton.jpeg';
     }
 }
 
