@@ -1,11 +1,3 @@
-//ta namn i prompt
-let userbtn = document.getElementById('user-btn');
-let mainhead = document.getElementById('main-header');
-userbtn.onclick = function() {
-    let userInput = prompt('Skriv ditt namn');
-    mainhead.innerHTML = ('Välkommen ' + userInput + ".");
-}
-
 //byt bild
 function changeImage() {
     let image = document.getElementById('myImage');
@@ -35,3 +27,27 @@ text.onclick = function() {
 
     this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
 };
+
+//ta namn i prompt
+let userbtn = document.getElementById('user-btn');
+//let mainhead = document.getElementById('main-header');
+userbtn.onclick = function() {
+    let userInput = prompt('Skriv ditt namn');
+    document.getElementById('main-header').innerHTML = ('Välkommen ' + userInput + ".");
+}
+
+//skriv ut sammanfattning av namn etc
+
+let say_hi = document.getElementById('say_hi');
+
+
+
+function pressMe() {
+    let fname = document.getElementById('fname').value;
+    let lname = document.getElementById('lname').value;
+
+    var HTML = "Välkommen " + fname + " " + lname + " !";
+    document.getElementById("result").innerHTML = HTML
+
+}
+document.getElementById('say_hi').addEventListener('click', pressMe);
