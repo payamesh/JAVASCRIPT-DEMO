@@ -47,7 +47,7 @@ welcome();
 
 fråga 7:
 Objekt är en variabel som kan tilldelas egenskaper. 
-en variabel kan hålla ett värde, men objekt kan hålla flera olika värden med namn.
+en variabel kan hålla ett värde, men objekt kan hålla flera olika värden med egenskaper och metoder.
 t.ex. 
 
 let human = {
