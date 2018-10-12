@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function kostnad(minutes) {
+            minutes = prompt("Hur många minuter ringer du i genomsnitt per månad?");
+            minutPris = prompt("Hur mycket betalar du per minut?");
+            kostnad = minutes * minutPris;
+            alert("Du har ringt " + minutes + " minuter." + "Taxan per minut är: " + minutPris + "kr" + " Din totala kostnad blir alltså: " + kostnad + "kr");
+        }
+        kostnad();
+    </script>
+
+    <!-- 
+    <script src="exempel-1.js"></script>
+    <script src="funktioner1.js"></script>
+ -->
+
+</body>
+
+</html>

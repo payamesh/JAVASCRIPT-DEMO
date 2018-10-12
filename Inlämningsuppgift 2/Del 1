@@ -1,0 +1,89 @@
+fråga 1:
+distributed version control system - är en sorts versionkontroll där hela koden och alla versioner kan hittas.
+Syftet är att man kan lägga till saker i projektet utan att behöva oroa sig att allt sparas på en och samma plats,
+och gör det mer tillgängligt för alla användare, oavsett vart man är på jorden. Kan även laddas ner och sedan
+kan man jobba offline på projektet och ladda upp det när man är klar.
+
+fråga 2:
+En funktion är en kodsnutt som gör det onödigt att kodaren ska behöva upprepa sig.
+Samt att underlätta läsning av kod, så att det ser mycket cleanare ut.
+ett exempel på en funktion om man t.ex. vill addera två variabler, men det kan vara så att man behöver göra detta flera gånger.
+då är det enklare att göra en funktion.
+
+function addition(a,b){
+    c = a + b;
+    return c;
+}
+addition(100, 200)
+console.log(c) // ger oss svaret 300, 
+//här tar vi 2 siffror, 100 och 200, adderar dem och returnerar värdet C.
+
+fråga 3:
+se ovan
+fråga 4:
+se ovan
+
+fråga 5: 
+Vill man returnera flera värden kan man göra på följande sätt:
+function returnValues(){
+
+    return [12, 24, 48]; //här returnerar vi värden till en array
+}
+let minaSvar = returnValues();     
+console.log(minaSvar[0]);//12
+console.log(minaSvar[1]);//24
+console.log(minaSvar[2]);//48
+
+
+
+fråga 6:
+En anonym funktion är en funktion utan namn. Den exekveras alltså av sig själv.
+Dem kallas och lagras i en variabel.
+som t.ex. 
+var welcome = function (){
+alert("Welcome to my website!")
+}
+welcome();
+
+fråga 7:
+Objekt är en variabel som kan tilldelas egenskaper. 
+en variabel kan hålla ett värde, men objekt kan hålla flera olika värden med namn.
+t.ex. 
+
+let human = {
+    name: "Payam"
+    length: 170,
+    weight: 65,
+    eyeColor: "blue"
+    alive: true
+    printHuman: function(){
+    console.log("This humans name is " + this.name + ".")
+    }
+}
+detta gör så att man kan lagra mer information om ett objekt. Man kan även skapa funktioner specifika för just det objektet.
+
+Fråga 8:
+Literal notation : 
+Du använder denna ifall du ska skapa ett specifikt objekt.
+
+Constructor notation: 
+Funkar som en blueprint, så att du kan skapa flera objekt med samma blueprint och metoder(funktioner), så att du slipper upprepa dig.
+
+Fråga 9:
+I ett objekt är egenskaperna dem variabler som sparats under objektet.
+t.ex. 
+let human = {       //objektet
+    //egenskaper
+    name: "Payam"
+    length: 170,
+    
+}
+Fråga 10:
+metoder är funktioner inom objekt. 
+t.ex.
+let human = {
+    name: "Payam"
+    printHuman: function(){     //metoden
+    console.log("This humans name is " + this.name + ".")
+    }
+}
