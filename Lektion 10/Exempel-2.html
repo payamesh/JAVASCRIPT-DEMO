@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <span id="timer"></span> s
+
+    <script>
+        let svar = prompt("Hur gammal är du?")
+
+        if (svar === null || svar === "" || isNaN(svar)) {
+            alert("Du måste ange ett nummer!")
+
+        } else if (svar < 18) {
+            let newDiv = document.createElement("div");
+            /*  let newContent = document.createTextNode("Du får inte rösta :\'-(");
+             newDiv.appendChild(newContent); */
+            newDiv.innerHTML = "<h1>Du får INTE rösta :\'-(</h1>";
+            document.body.appendChild(newDiv);
+            newDiv.style.cssText = "color: red; font-size: 50px";
+
+
+        } else {
+            let newDiv = document.createElement("div");
+            /* let newContent = document.createTextNode("Du får rösta :--)"); */
+            newDiv.innerHTML = "<h1>Du får rösta :--)</h1>"
+                /* newDiv.appendChild(newContent); */
+            document.body.appendChild(newDiv);
+            newDiv.style.cssText = "color: green; font-size: 50px";
+        }
+
+        let today = new Date();
+
+        let startTime = Date.now();
+        let interval = setInterval(function() {
+            let elapsedTime = Date.now() - startTime;
+            document.getElementById("timer").innerHTML = (elapsedTime / 1000).toFixed(1);
+        }, 100);
+
+        function counter() {
+
+
+            document.body.innerHTML += "<h1>" + today + "</h1>";
+        }
+        counter();
+    </script>
+</body>
+
+</html>

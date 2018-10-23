@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function uträknare() {
+            let poäng = prompt("hur många poäng fick du?");
+
+            switch (true) {
+                case (poäng <= 25):
+                    alert("Du klarade ej provet, F");
+                    break;
+                case (poäng < 30):
+                    alert("Du klarade provet, E");
+                    break;
+                case (poäng < 35):
+                    alert("Du klarade provet, D");
+                    break;
+                case (poäng < 40):
+                    alert("Du klarade provet, C");
+                    break;
+                case (poäng < 45):
+                    alert("Du klarade provet, B");
+                    break;
+                case (poäng = 50):
+                    alert("Du klarade provet, A");
+                    break;
+                default:
+                    alert("SLUTA BOMBA IDIOT")
+                    break;
+            }
+            return poäng;
+        }
+        uträknare();
+    </script>
+</body>
+
+</html>

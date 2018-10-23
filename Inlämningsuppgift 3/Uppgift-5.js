@@ -2,7 +2,7 @@ function randomDice() {
     let bigArray = new Array();
 
     for (let i = 0; i < 1000; i++) {
-        bigArray.push(Math.floor(Math.random() * 6 + 1))
+        bigArray.push(Math.floor(Math.random() * 6 + 1)) //trycker in 1000 slumpmässiga tal mellan 1-6 i en array
 
     }
     return bigArray;
@@ -19,8 +19,8 @@ console.log(bigArray);
 
 function printCount(array) {
     for (let i = 0; i < array.length; ++i) {
-        if (array[i] == 1) {
-            count++
+        if (array[i] == 1) { //loopar igenom arrayen och hittar matchningar samt 
+            count++ //itererar för varje match
         } else if (array[i] == 2) {
             count2++
         } else if (array[i] == 3) {

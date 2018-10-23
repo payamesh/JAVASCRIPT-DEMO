@@ -12,4 +12,6 @@ function helloPopup() {
 }
 setTimeout(helloPopup, 3000);
 
-//3. setinterval
+//3. setinterval repeterar en funktion efter satt intervall
+function helloConsole() { console.log(person); }
+setInterval(helloConsole, 1000);
